@@ -8,465 +8,477 @@
 <title>Metro Control — Privacy Policy</title>
 <style>
 :root{
-  --ink:#172026;
-  --muted:#66747d;
+  --bg:#f2f4f5;
   --paper:#ffffff;
-  --bg:#eef2f3;
-  --line:#d6dfe2;
-  --navy:#182a34;
-  --navy2:#223944;
-  --cyan:#4d8f97;
-  --cyan-soft:#eaf4f5;
-  --orange:#c8843e;
-  --orange-soft:#fbf1e7;
-  --red:#b9564d;
-  --rail:292px;
+  --ink:#172127;
+  --muted:#6a777e;
+  --line:#d7dee1;
+  --navy:#14262f;
+  --teal:#2d7b7d;
+  --teal-soft:#eaf3f3;
+  --amber:#b77b36;
+  --amber-soft:#fbf3e8;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
   margin:0;
-  background:
-    linear-gradient(rgba(36,61,70,.035) 1px, transparent 1px),
-    linear-gradient(90deg,rgba(36,61,70,.035) 1px, transparent 1px),
-    var(--bg);
-  background-size:32px 32px;
+  background:var(--bg);
   color:var(--ink);
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  line-height:1.68;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
   font-size:15px;
+  line-height:1.7;
 }
-a{color:#2f727b;text-decoration:none}
+a{color:var(--teal);text-decoration:none}
 a:hover{text-decoration:underline}
-.shell{max-width:1220px;margin:0 auto;padding:34px 22px 64px}
-.hero{
-  position:relative;
-  overflow:hidden;
+.topbar{
   background:var(--navy);
-  color:#f6fafb;
-  border-radius:20px;
-  padding:38px 42px 34px;
-  box-shadow:0 20px 54px rgba(23,39,46,.14);
+  color:#eef5f6;
+  border-bottom:4px solid var(--teal);
 }
-.hero:after{
-  content:"";
-  position:absolute;
-  width:520px;height:520px;
-  right:-190px;top:-270px;
-  border:2px solid rgba(125,197,205,.16);
-  border-radius:50%;
-  box-shadow:
-    0 0 0 48px rgba(125,197,205,.05),
-    0 0 0 98px rgba(125,197,205,.035);
-}
-.kicker{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#9ec3c8}
-h1{font-size:44px;line-height:1.06;letter-spacing:-.04em;margin:10px 0 13px}
-.hero p{max-width:760px;color:#d6e1e4;margin:0;font-size:16px}
-.hero-meta{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:25px;color:#9fb2b9;font-size:12px}
-.hero-meta strong{color:#eef5f6}
-.status-strip{
+.topbar-inner{
+  max-width:1120px;
+  margin:0 auto;
+  padding:28px 28px 24px;
   display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:1px;
-  margin:18px 0 22px;
-  overflow:hidden;
-  border:1px solid var(--line);
-  border-radius:13px;
-  background:var(--line);
+  grid-template-columns:1fr auto;
+  gap:30px;
+  align-items:end;
 }
-.status-item{background:var(--paper);padding:16px 17px}
-.status-item b{display:block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
-.status-item span{font-size:14px;font-weight:750;color:#26343a}
-.workspace{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);gap:20px;align-items:start}
-.rail{
-  position:sticky;top:16px;
-  background:#f7f9f9;
-  border:1px solid var(--line);
-  border-radius:14px;
-  overflow:hidden;
+.eyebrow{
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#8fb7ba;
+  margin-bottom:8px;
 }
-.rail-head{padding:16px 18px 12px;border-bottom:1px solid var(--line);background:#edf2f3}
-.rail-head strong{font-size:12px;letter-spacing:.08em;text-transform:uppercase}
-.rail-head div{font-size:11px;color:var(--muted);margin-top:3px}
-.rail nav{padding:9px 0;max-height:calc(100vh - 120px);overflow:auto}
-.rail a{
-  display:grid;grid-template-columns:34px 1fr;gap:8px;
-  padding:7px 15px;color:#4a5b63;font-size:12px;border-left:3px solid transparent
+h1{
+  margin:0;
+  font-size:42px;
+  line-height:1.05;
+  letter-spacing:-.035em;
 }
-.rail a:hover{background:#eaf1f2;text-decoration:none;border-left-color:var(--cyan)}
-.num{color:#92a0a6;font-variant-numeric:tabular-nums}
-main{min-width:0}
-.card{
+.topbar-meta{
+  text-align:right;
+  color:#aebec3;
+  font-size:12px;
+}
+.topbar-meta strong{color:#f0f6f7}
+.intro{
+  max-width:1120px;
+  margin:0 auto;
+  padding:28px 28px 18px;
+}
+.intro p{
+  margin:0;
+  max-width:900px;
+  color:#44535b;
+  font-size:16px;
+}
+.index{
+  max-width:1120px;
+  margin:0 auto 26px;
+  padding:0 28px;
+}
+.index-row{
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  padding:12px 0;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 18px;
+}
+.index a{
+  font-size:11px;
+  font-weight:750;
+  letter-spacing:.03em;
+  color:#526269;
+}
+.index a:hover{color:var(--teal);text-decoration:none}
+.doc{
+  max-width:1120px;
+  margin:0 auto;
   background:var(--paper);
   border:1px solid var(--line);
-  border-radius:14px;
-  margin-bottom:13px;
-  overflow:hidden;
+  box-shadow:0 18px 50px rgba(34,50,58,.08);
 }
-.card-head{display:flex;gap:14px;align-items:flex-start;padding:22px 26px 0}
-.section-no{
-  flex:0 0 auto;width:36px;height:36px;border-radius:9px;
-  display:grid;place-items:center;
-  background:var(--navy);color:#fff;font-size:11px;font-weight:800
+.chapter{
+  display:grid;
+  grid-template-columns:112px minmax(0,1fr);
+  border-bottom:1px solid var(--line);
 }
-h2{font-size:23px;line-height:1.24;letter-spacing:-.02em;margin:2px 0 0}
-.card-body{padding:12px 26px 24px}
-p{margin:10px 0;color:#3d4b52}
-h3{font-size:16px;margin:22px 0 7px;color:#26363d}
-ul{padding-left:22px;color:#3d4b52}
+.chapter:last-child{border-bottom:0}
+.chapter-no{
+  padding:30px 22px;
+  border-right:1px solid var(--line);
+  background:#f7f9f9;
+  color:#87949a;
+  font-size:30px;
+  line-height:1;
+  font-weight:800;
+  letter-spacing:-.04em;
+}
+.chapter-body{
+  padding:28px 34px 32px;
+}
+h2{
+  margin:0 0 12px;
+  font-size:24px;
+  line-height:1.25;
+  letter-spacing:-.02em;
+}
+h3{
+  margin:22px 0 7px;
+  font-size:16px;
+}
+p{margin:10px 0;color:#3f4d54}
+ul{margin:10px 0;padding-left:22px;color:#3f4d54}
 li{margin:6px 0}
-.callout{
-  margin:16px 0;padding:14px 16px;
-  border-left:4px solid var(--cyan);
-  background:var(--cyan-soft);
-  border-radius:0 8px 8px 0;color:#35474e
+.note{
+  margin:18px 0 2px;
+  padding:14px 16px;
+  border-left:4px solid var(--teal);
+  background:var(--teal-soft);
+  color:#34484c;
 }
-.warning{border-left-color:var(--orange);background:var(--orange-soft)}
+.note.warn{
+  border-left-color:var(--amber);
+  background:var(--amber-soft);
+}
+.fact-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:1px;
+  background:var(--line);
+  border:1px solid var(--line);
+  margin:18px 0 4px;
+}
+.fact{
+  background:#fff;
+  padding:15px 16px;
+}
+.fact b{
+  display:block;
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  color:var(--muted);
+  margin-bottom:4px;
+}
+.fact span{font-weight:750;color:#28383e}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:16px 0 4px;
+  font-size:13px;
+}
+th,td{
+  padding:11px 12px;
+  text-align:left;
+  vertical-align:top;
+  border-bottom:1px solid var(--line);
+}
+th{
+  background:#f4f6f7;
+  font-size:10px;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+  color:#64737a;
+}
 code{
   font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-  font-size:.92em;background:#eef2f3;border:1px solid #dce4e6;border-radius:5px;padding:2px 5px
+  font-size:.92em;
+  padding:2px 5px;
+  background:#eef2f3;
+  border:1px solid #dde4e6;
+  border-radius:4px;
 }
-.table-wrap{overflow:auto;margin:15px 0}
-table{width:100%;border-collapse:collapse;min-width:760px;font-size:13px}
-th,td{padding:12px 13px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
-th{background:#f1f4f5;color:#5c6b72;font-size:10px;letter-spacing:.08em;text-transform:uppercase}
-td:first-child{font-weight:700;color:#304149}
-.yesno{font-weight:800}
-.no{color:#2f727b}
-.local{color:#8a632e}
-.code-panel{
-  margin:15px 0;background:#1c2b32;color:#d8e6e9;border-radius:10px;padding:16px 18px;
-  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;overflow:auto
+.storage-key{
+  margin:14px 0;
+  padding:14px 16px;
+  background:#17272f;
+  color:#dce8ea;
+  border-radius:7px;
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
 }
-.code-panel .dim{color:#88a0a8}
-.contact-box{
-  display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;
-  background:#f4f7f7;border-top:1px solid var(--line);padding:18px 26px 22px
+.storage-key small{
+  display:block;
+  color:#8fa4ac;
+  margin-bottom:4px;
+  font-family:inherit;
 }
-.contact-box strong{font-size:13px}
-.contact-box span{font-size:12px;color:var(--muted)}
-.contact-chip{
-  white-space:nowrap;border:1px solid #b9c9cd;border-radius:999px;padding:8px 12px;
-  color:#355c64;background:#fff;font-size:12px;font-weight:700
+.contact-panel{
+  max-width:1120px;
+  margin:22px auto 0;
+  padding:0 28px;
 }
-.footer{display:flex;justify-content:space-between;gap:18px;padding:17px 4px 0;color:#77868d;font-size:11px}
-@media(max-width:900px){
-  .status-strip{grid-template-columns:repeat(2,1fr)}
-  .workspace{grid-template-columns:1fr}
-  .rail{position:relative;top:auto}
-  .rail nav{max-height:none;columns:2}
+.contact-inner{
+  background:#e8eeee;
+  border:1px solid #ccd8da;
+  padding:20px 24px;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:20px;
+  align-items:center;
 }
-@media(max-width:580px){
-  .shell{padding:14px 10px 40px}
-  .hero{padding:28px 20px}
-  h1{font-size:35px}
-  .status-strip{grid-template-columns:1fr}
-  .rail nav{columns:1}
-  .card-head{padding:19px 17px 0}
-  .card-body{padding:10px 17px 20px}
-  .contact-box{grid-template-columns:1fr}
-  .footer{flex-direction:column}
+.contact-inner strong{display:block;margin-bottom:3px}
+.contact-inner span{font-size:12px;color:#67767d}
+.contact-badge{
+  border:1px solid #aebfc3;
+  background:#fff;
+  padding:8px 11px;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  color:#48646a;
+}
+footer{
+  max-width:1120px;
+  margin:0 auto;
+  padding:18px 28px 50px;
+  display:flex;
+  justify-content:space-between;
+  gap:18px;
+  color:#7a878d;
+  font-size:11px;
+}
+@media(max-width:760px){
+  .topbar-inner{grid-template-columns:1fr}
+  .topbar-meta{text-align:left}
+  .chapter{grid-template-columns:1fr}
+  .chapter-no{
+    border-right:0;
+    border-bottom:1px solid var(--line);
+    padding:14px 20px;
+    font-size:18px;
+  }
+  .chapter-body{padding:22px 20px}
+  .fact-grid{grid-template-columns:1fr}
+  .contact-inner{grid-template-columns:1fr}
 }
 </style>
 </head>
 <body>
-<div class="shell">
 
-<header class="hero">
-  <div class="kicker">Metro Control · Privacy Document</div>
-  <h1>Privacy Policy</h1>
-  <p>This document explains how the Metro Control Chrome extension stores game progress, what information remains in the browser, what browser capabilities the extension uses, and what information is not collected or transmitted during normal gameplay.</p>
-  <div class="hero-meta">
-    <span><strong>Effective:</strong> August 28, 2026</span>
-    <span><strong>Version reviewed:</strong> 1.0.0</span>
-    <span><strong>Document type:</strong> Extension privacy policy</span>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div>
+      <div class="eyebrow">Metro Control / Privacy</div>
+      <h1>Privacy Policy</h1>
+    </div>
+    <div class="topbar-meta">
+      <div><strong>Effective:</strong> August 28, 2026</div>
+      <div><strong>Reviewed version:</strong> 1.0.0</div>
+    </div>
   </div>
 </header>
 
-<div class="status-strip">
-  <div class="status-item"><b>Game progress</b><span>Local browser storage</span></div>
-  <div class="status-item"><b>Chrome permissions</b><span>None requested</span></div>
-  <div class="status-item"><b>Network backend</b><span>Not used</span></div>
-  <div class="status-item"><b>Analytics / advertising</b><span>Not included</span></div>
-</div>
-
-<div class="workspace">
-<aside class="rail">
-  <div class="rail-head"><strong>Document index</strong><div>Metro Control · v1.0.0</div></div>
-  <nav>
-    <a href="#overview"><span class="num">01</span><span>Overview</span></a>
-    <a href="#scope"><span class="num">02</span><span>Scope</span></a>
-    <a href="#architecture"><span class="num">03</span><span>Local-first architecture</span></a>
-    <a href="#collection"><span class="num">04</span><span>Developer collection</span></a>
-    <a href="#matrix"><span class="num">05</span><span>Data handling matrix</span></a>
-    <a href="#save"><span class="num">06</span><span>Game save contents</span></a>
-    <a href="#passengers"><span class="num">07</span><span>Passengers and simulation</span></a>
-    <a href="#statistics"><span class="num">08</span><span>Statistics and progression</span></a>
-    <a href="#storage"><span class="num">09</span><span>Storage and retention</span></a>
-    <a href="#permissions"><span class="num">10</span><span>Chrome permissions</span></a>
-    <a href="#browsing"><span class="num">11</span><span>Browsing access</span></a>
-    <a href="#network"><span class="num">12</span><span>Network activity</span></a>
-    <a href="#tracking"><span class="num">13</span><span>Analytics and tracking</span></a>
-    <a href="#sharing"><span class="num">14</span><span>Sharing and sale</span></a>
-    <a href="#security"><span class="num">15</span><span>Security</span></a>
-    <a href="#deletion"><span class="num">16</span><span>Deletion and removal</span></a>
-    <a href="#children"><span class="num">17</span><span>Children's privacy</span></a>
-    <a href="#platform"><span class="num">18</span><span>Chrome and third parties</span></a>
-    <a href="#changes"><span class="num">19</span><span>Policy changes</span></a>
-    <a href="#contact"><span class="num">20</span><span>Contact</span></a>
-  </nav>
-</aside>
-
-<main>
-
-<section class="card" id="overview">
-  <div class="card-head"><div class="section-no">01</div><h2>Overview</h2></div>
-  <div class="card-body">
-    <p>Metro Control is a compact metro operations game that runs inside the Chrome extension popup. Players build routes between fictional stations, purchase and operate fictional trains, move simulated passengers, manage crowding and transfers, respond to service incidents, upgrade stations, and progress through service days.</p>
-    <p>The current release is designed as a self-contained local game. Its core simulation is executed by JavaScript included in the extension package. Normal gameplay does not require an online account, cloud save, remote game server, analytics service, advertising network, social platform, or developer-operated API.</p>
-    <div class="callout"><strong>Summary:</strong> Metro Control saves its fictional transit network locally in the browser. The developer does not receive the local game save through normal gameplay, and the extension does not need access to the websites the user visits.</div>
-  </div>
+<section class="intro">
+  <p>This policy explains how Metro Control stores game progress, what remains local to the browser, what browser capabilities the extension uses, and what information is not collected or transmitted during normal gameplay.</p>
 </section>
 
-<section class="card" id="scope">
-  <div class="card-head"><div class="section-no">02</div><h2>Scope of this policy</h2></div>
-  <div class="card-body">
-    <p>This policy applies to Metro Control version 1.0.0 and to the code and assets packaged with that version, including the popup interface, transit simulation, route-building system, passenger simulation, station queues, train operations, incidents, progression, service-day scoring, tutorial state, and local save.</p>
-    <p>This policy does not govern Google Chrome, the Chrome Web Store, the user's Google account, the operating system, enterprise browser management, device backup software, security products, or unrelated websites and applications. Those products may process data independently under their own settings and policies.</p>
-    <p>If a future release adds materially different functionality—such as accounts, cloud synchronization, multiplayer, remote AI, analytics, advertising, website integration, or new Chrome permissions—this policy should be updated to describe the new behavior.</p>
+<nav class="index">
+  <div class="index-row">
+    <a href="#s1">01 Overview</a>
+    <a href="#s2">02 Local storage</a>
+    <a href="#s3">03 Save contents</a>
+    <a href="#s4">04 Data collection</a>
+    <a href="#s5">05 Permissions</a>
+    <a href="#s6">06 Browsing access</a>
+    <a href="#s7">07 Network activity</a>
+    <a href="#s8">08 Analytics & ads</a>
+    <a href="#s9">09 Retention & deletion</a>
+    <a href="#s10">10 Security</a>
+    <a href="#s11">11 Third parties</a>
+    <a href="#s12">12 Changes</a>
   </div>
-</section>
+</nav>
 
-<section class="card" id="architecture">
-  <div class="card-head"><div class="section-no">03</div><h2>Local-first architecture</h2></div>
-  <div class="card-body">
-    <p>Metro Control stores the current game state in the extension's own browser origin using ordinary <code>localStorage</code>. The current save key is:</p>
-    <div class="code-panel"><span class="dim">localStorage key</span><br>metroControlStateV1</div>
-    <p>The key is an implementation detail used to find the saved game. It is not a user account number, advertising identifier, browser fingerprint, or identifier intended to track a person across websites or services.</p>
-    <p>The simulation can continue across popup sessions because the game periodically serializes its state to this local key and saves again when the popup is being closed. The extension then reads the same local state the next time it opens.</p>
-    <p>Metro Control does not currently provide a developer-operated cloud backup. As a result, the developer normally cannot restore a game after the local browser data has been deleted.</p>
-  </div>
-</section>
+<main class="doc">
 
-<section class="card" id="collection">
-  <div class="card-head"><div class="section-no">04</div><h2>Information collected by the developer</h2></div>
-  <div class="card-body">
-    <p>During normal use of version 1.0.0, Metro Control does <strong>not collect the local game save for the developer</strong>. Opening the popup, building routes, buying trains, moving passengers, completing a day, resolving an incident, or changing the network does not automatically transmit those actions to a developer server.</p>
-    <p>The extension does not intentionally collect names, email addresses, postal addresses, phone numbers, passwords, authentication tokens, payment information, health information, biometric information, precise location, browsing history, search history, website content, private messages, Chrome account identifiers, or other unrelated personal information.</p>
-    <p>Metro Control also does not automatically report gameplay telemetry such as session duration, number of stations served, routes created, credits earned, riders delivered, incidents resolved, service reliability, or service-day scores.</p>
-  </div>
-</section>
-
-<section class="card" id="matrix">
-  <div class="card-head"><div class="section-no">05</div><h2>Data handling matrix</h2></div>
-  <div class="card-body">
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Information</th><th>Developer receives it?</th><th>How Metro Control uses it</th></tr></thead>
-        <tbody>
-          <tr><td>Game progress</td><td class="yesno local">Local only</td><td>Stored in the extension's browser storage so a service day can continue later.</td></tr>
-          <tr><td>Routes and stations</td><td class="yesno local">Local only</td><td>Represents the fictional metro network built by the player.</td></tr>
-          <tr><td>Train state</td><td class="yesno local">Local only</td><td>Stores each fictional train's route, position, direction, dwell state, capacity, and onboard passengers.</td></tr>
-          <tr><td>Passenger simulation</td><td class="yesno local">Local only</td><td>Tracks fictional passenger destinations, queues, journeys, and transfers.</td></tr>
-          <tr><td>Incidents</td><td class="yesno local">Local only</td><td>Stores current fictional service disruptions and their simulation state.</td></tr>
-          <tr><td>Gameplay statistics</td><td class="yesno local">Local only</td><td>Tracks fictional performance and progression values.</td></tr>
-          <tr><td>Personally identifiable information</td><td class="yesno no">No</td><td>No Metro Control account or identity profile is created.</td></tr>
-          <tr><td>Browsing history</td><td class="yesno no">No</td><td>The extension does not request history access.</td></tr>
-          <tr><td>Website content</td><td class="yesno no">No</td><td>No content script or host access is used.</td></tr>
-          <tr><td>Location</td><td class="yesno no">No</td><td>The fictional city is part of the game and is not based on the user's real location.</td></tr>
-          <tr><td>Analytics / advertising IDs</td><td class="yesno no">No</td><td>No analytics or advertising SDK is included.</td></tr>
-        </tbody>
-      </table>
+<section class="chapter" id="s1">
+  <div class="chapter-no">01</div>
+  <div class="chapter-body">
+    <h2>Overview</h2>
+    <p>Metro Control is a compact metro operations game that runs inside the Chrome extension popup. Players build fictional routes, operate fictional trains, move simulated passengers, manage transfers and crowding, respond to service incidents, upgrade stations, and progress through service days.</p>
+    <p>The current release is designed as a self-contained local game. Its simulation, interface, game logic, and visual assets are included in the installed extension package. Normal play does not require a Metro Control account, remote gameplay server, analytics service, advertising network, social platform, or developer-operated cloud save.</p>
+    <div class="fact-grid">
+      <div class="fact"><b>Game save</b><span>Stored locally in the browser</span></div>
+      <div class="fact"><b>Chrome permissions</b><span>None requested</span></div>
+      <div class="fact"><b>Developer backend</b><span>Not used</span></div>
+      <div class="fact"><b>Analytics / advertising</b><span>Not included</span></div>
     </div>
   </div>
 </section>
 
-<section class="card" id="save">
-  <div class="card-head"><div class="section-no">06</div><h2>What the local game save contains</h2></div>
-  <div class="card-body">
-    <p>The local save contains the data required to reconstruct the fictional network and simulation. Depending on progress, that state can include:</p>
+<section class="chapter" id="s2">
+  <div class="chapter-no">02</div>
+  <div class="chapter-body">
+    <h2>Local storage architecture</h2>
+    <p>Metro Control saves its current game state in the extension's own browser origin using ordinary <code>localStorage</code>. The production version reviewed for this policy uses one main save key:</p>
+    <div class="storage-key"><small>Local browser save key</small>metroControlStateV1</div>
+    <p>This key is an implementation detail for locating the saved game. It is not an account identifier, advertising ID, browser fingerprint, or identifier used to track a person across websites.</p>
+    <p>The extension reads this local state when the popup opens and saves updated state during gameplay and when the popup is being closed. This allows an active service day and network to continue across sessions.</p>
+    <div class="note"><strong>Local-first:</strong> the developer does not receive a normal cloud copy of the game save. If local browser data is removed, the developer generally cannot restore that progress.</div>
+  </div>
+</section>
+
+<section class="chapter" id="s3">
+  <div class="chapter-no">03</div>
+  <div class="chapter-body">
+    <h2>What the game save contains</h2>
+    <p>The saved state contains information required to reconstruct the fictional transit simulation. Depending on progress, this may include:</p>
     <ul>
-      <li>the save-format version;</li>
-      <li>a locally generated random seed and random-number-generator state;</li>
-      <li>the current service day and in-game clock;</li>
-      <li>simulation timing, speed, paused/running state, and whether service has started;</li>
+      <li>save-format version and locally generated random simulation state;</li>
+      <li>current service day and in-game clock;</li>
+      <li>simulation speed, paused/running state, and service status;</li>
       <li>fictional credits, reliability, and score;</li>
-      <li>created metro lines, line identifiers, line colors, and station sequences;</li>
-      <li>fictional trains, their line assignment, route position, direction, dwell time, capacity, and passengers currently onboard;</li>
-      <li>station upgrade levels, passenger queues, demand accumulation, and overload timing;</li>
-      <li>active fictional service incidents;</li>
-      <li>service-day summary information;</li>
-      <li>tutorial progress;</li>
-      <li>locally generated IDs for simulated passengers, trains, and incidents;</li>
-      <li>aggregate gameplay statistics described below.</li>
+      <li>metro lines, line colors, and station sequences created by the player;</li>
+      <li>fictional trains, route position, direction, dwell time, capacity, and onboard passengers;</li>
+      <li>station upgrade levels, passenger queues, demand and overload state;</li>
+      <li>simulated passenger IDs and fictional destinations;</li>
+      <li>active service incidents;</li>
+      <li>daily service summaries and progression;</li>
+      <li>tutorial state;</li>
+      <li>aggregate gameplay statistics such as generated passengers, delivered riders, missed riders, transfers, upgrades, routes, trains, incidents resolved, and service days completed.</li>
     </ul>
-    <p>These values describe a simulated transit system. They are not derived from the user's real transit card, real commute, real city, GPS coordinates, physical movement, financial account, or browsing behavior.</p>
+    <p>All of these values belong to the game simulation. They are not derived from real transit cards, real commuting behavior, GPS location, real maps, banking information, browser activity, or physical movement.</p>
+
+    <h3>Passenger simulation</h3>
+    <p>Metro Control generates fictional passengers internally. A simulated passenger can have an internal ID, destination station, waiting state, journey state, and transfer information. Passenger routing is calculated from the fictional metro network built by the player.</p>
+    <p>The simulation does not use the user's real location, travel history, contacts, calendar, Google Maps data, or public-transit account information.</p>
   </div>
 </section>
 
-<section class="card" id="passengers">
-  <div class="card-head"><div class="section-no">07</div><h2>Fictional passengers, destinations, and route finding</h2></div>
-  <div class="card-body">
-    <p>Metro Control generates fictional passengers as part of the game simulation. These passenger objects can include an internal ID, a fictional destination station, waiting/journey state, and information required to simulate transfers or delivery to a destination.</p>
-    <p>Passenger routing is calculated from the fictional metro graph built by the player. Route finding does not use the user's location, travel history, Google Maps information, contacts, calendar, or real transport data.</p>
-    <p>Station queues and onboard passenger lists may be stored as part of the local save so the simulation does not need to discard an active service day whenever the popup closes.</p>
-    <div class="callout"><strong>No real passenger information:</strong> terms such as “passenger,” “destination,” “journey,” “station,” and “transfer” refer only to objects inside the game simulation.</div>
+<section class="chapter" id="s4">
+  <div class="chapter-no">04</div>
+  <div class="chapter-body">
+    <h2>Information collected by the developer</h2>
+    <p>During normal operation of Metro Control version 1.0.0, the extension does <strong>not collect the local game save for the developer</strong>. Opening the extension, creating routes, purchasing trains, moving simulated passengers, responding to incidents, or completing service days does not automatically transmit those actions to a developer server.</p>
+    <p>The extension does not intentionally collect names, email addresses, postal addresses, phone numbers, passwords, authentication tokens, payment details, health information, biometric information, precise location, browsing history, search history, website content, private communications, or Chrome account identifiers.</p>
+    <p>Gameplay performance is also not automatically reported to the developer. Values such as ridership, reliability, route count, train count, credits, incidents, and day scores remain part of the local game state.</p>
+
+    <table>
+      <thead><tr><th>Data category</th><th>Developer receives it?</th><th>Current behavior</th></tr></thead>
+      <tbody>
+        <tr><td>Game progress</td><td>Local only</td><td>Saved in extension-origin browser storage.</td></tr>
+        <tr><td>Routes / stations / trains</td><td>Local only</td><td>Used to reconstruct the fictional network.</td></tr>
+        <tr><td>Passenger simulation</td><td>Local only</td><td>Used for fictional queues, routing, journeys, and transfers.</td></tr>
+        <tr><td>Gameplay statistics</td><td>Local only</td><td>Used for scoring, summaries, and progression.</td></tr>
+        <tr><td>Browsing history</td><td>No</td><td>The extension does not request history access.</td></tr>
+        <tr><td>Website content</td><td>No</td><td>No content script or host access is used.</td></tr>
+        <tr><td>Location</td><td>No</td><td>The fictional city is not based on the user's physical location.</td></tr>
+        <tr><td>Analytics / advertising IDs</td><td>No</td><td>No analytics or advertising SDK is included.</td></tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
-<section class="card" id="statistics">
-  <div class="card-head"><div class="section-no">08</div><h2>Gameplay statistics and progression</h2></div>
-  <div class="card-body">
-    <p>The game maintains local aggregate statistics needed for scoring, progression, summaries, and simulation balancing. These can include values such as:</p>
-    <ul>
-      <li>fictional passengers generated, delivered, or missed;</li>
-      <li>transfers completed;</li>
-      <li>total simulated journey time;</li>
-      <li>today's delivered/generated/missed passenger counts;</li>
-      <li>fictional service revenue;</li>
-      <li>service days completed;</li>
-      <li>lines built and trains purchased;</li>
-      <li>station upgrades;</li>
-      <li>incidents resolved.</li>
-    </ul>
-    <p>These statistics stay in the local game state. They are not a developer analytics profile and are not automatically uploaded for measurement, marketing, advertising, user segmentation, or cross-product tracking.</p>
-  </div>
-</section>
-
-<section class="card" id="storage">
-  <div class="card-head"><div class="section-no">09</div><h2>Storage, persistence, and retention</h2></div>
-  <div class="card-body">
-    <p>The saved game remains in the Chrome browser profile so that progress can persist after the extension popup is closed. The developer does not set a server-side retention period because the current version does not maintain a remote game-save database.</p>
-    <p>Local information can remain until Chrome or the user removes or replaces it. This may occur through normal game saves, clearing extension-origin browser data, deleting or resetting the browser profile, uninstalling the extension, enterprise-management actions, or other browser/device maintenance.</p>
-    <p>Chrome, the operating system, enterprise-management software, migration tools, or device-backup software may independently copy or preserve browser-profile files according to their own behavior. Metro Control does not control those external systems.</p>
-    <div class="callout warning"><strong>No cloud recovery:</strong> because the developer does not receive the local save during normal play, the developer generally cannot recover progress after local data is removed.</div>
-  </div>
-</section>
-
-<section class="card" id="permissions">
-  <div class="card-head"><div class="section-no">10</div><h2>Chrome permissions</h2></div>
-  <div class="card-body">
+<section class="chapter" id="s5">
+  <div class="chapter-no">05</div>
+  <div class="chapter-body">
+    <h2>Chrome permissions</h2>
     <p>Metro Control version 1.0.0 uses Chrome Manifest V3 and requests <strong>no extension permissions and no host permissions</strong>.</p>
-    <p>The manifest does not request permissions such as <code>tabs</code>, <code>activeTab</code>, <code>history</code>, <code>scripting</code>, <code>cookies</code>, <code>downloads</code>, <code>notifications</code>, <code>geolocation</code>, or Chrome's extension <code>storage</code> API permission.</p>
-    <p>The game instead uses ordinary web-platform capabilities available within its own extension popup, including DOM rendering, Canvas graphics, timers, animation frames, and the popup origin's localStorage.</p>
+    <p>The manifest does not request <code>tabs</code>, <code>activeTab</code>, <code>history</code>, <code>scripting</code>, <code>cookies</code>, <code>downloads</code>, <code>notifications</code>, <code>geolocation</code>, or Chrome's extension <code>storage</code> permission.</p>
+    <p>The game uses ordinary web-platform functionality available inside its own popup, including HTML/DOM rendering, Canvas graphics, timers, animation frames, and extension-origin localStorage.</p>
   </div>
 </section>
 
-<section class="card" id="browsing">
-  <div class="card-head"><div class="section-no">11</div><h2>Website, tab, and browsing access</h2></div>
-  <div class="card-body">
-    <p>Metro Control does not need the page behind the toolbar popup in order to operate. The current version has no content scripts and no host permissions.</p>
-    <p>It does not read or modify:</p>
-    <ul>
-      <li>the URL or title of the active tab;</li>
-      <li>text, images, forms, links, or DOM content on web pages;</li>
-      <li>Chrome browsing history or search history;</li>
-      <li>website cookies;</li>
-      <li>website localStorage or sessionStorage;</li>
-      <li>information typed into unrelated websites;</li>
-      <li>download history or bookmarks.</li>
-    </ul>
-    <p>The localStorage used for <code>metroControlStateV1</code> belongs to the extension's own origin and is separate from the storage of unrelated websites.</p>
+<section class="chapter" id="s6">
+  <div class="chapter-no">06</div>
+  <div class="chapter-body">
+    <h2>Website, tab, and browsing access</h2>
+    <p>Metro Control does not need to inspect the website behind the popup in order to operate. The current production manifest contains no content scripts and no host permissions.</p>
+    <p>The extension does not read or modify active-tab URLs, page titles, page text, images, forms, links, cookies, website localStorage, website sessionStorage, browsing history, search history, bookmarks, or information typed into unrelated websites.</p>
+    <p>The localStorage used by Metro Control belongs to the extension's own origin and is separate from storage used by ordinary websites.</p>
   </div>
 </section>
 
-<section class="card" id="network">
-  <div class="card-head"><div class="section-no">12</div><h2>Network activity and remote code</h2></div>
-  <div class="card-body">
-    <p>The reviewed Metro Control package does not use <code>fetch</code>, XMLHttpRequest, WebSocket, or a developer API for its gameplay. The current game logic, interface, styling, and icons are packaged with the extension.</p>
-    <p>The package does not load remote JavaScript, remote CSS, remote fonts, online maps, real transit feeds, remote AI, social-login libraries, analytics endpoints, or advertising resources.</p>
-    <p>Chrome itself may communicate with Google for installation, extension updates, Chrome Web Store functions, security, account features, or browser services. Operating systems, networks, administrators, and security products may also create their own network traffic. Those communications are outside Metro Control's game implementation.</p>
+<section class="chapter" id="s7">
+  <div class="chapter-no">07</div>
+  <div class="chapter-body">
+    <h2>Network activity and remote services</h2>
+    <p>The reviewed production package does not use <code>fetch</code>, XMLHttpRequest, WebSocket, or a developer API for gameplay. The extension does not need real-time transit feeds, remote maps, external JavaScript, remote CSS, remote fonts, social-login systems, online AI, analytics endpoints, or advertising resources.</p>
+    <p>Chrome itself may communicate with Google for extension installation, updates, Chrome Web Store functions, security, Safe Browsing, account features, or other browser services. Operating systems, administrators, network providers, and security products may also create network traffic independently. Those activities are not Metro Control gameplay telemetry.</p>
   </div>
 </section>
 
-<section class="card" id="tracking">
-  <div class="card-head"><div class="section-no">13</div><h2>Analytics, tracking, cookies, and advertising</h2></div>
-  <div class="card-body">
-    <h3>Analytics and telemetry</h3>
-    <p>Metro Control version 1.0.0 does not include Google Analytics, Firebase Analytics, Mixpanel, Amplitude, Segment, PostHog, or a comparable analytics SDK. It does not automatically submit gameplay metrics to the developer.</p>
+<section class="chapter" id="s8">
+  <div class="chapter-no">08</div>
+  <div class="chapter-body">
+    <h2>Analytics, advertising, tracking, and cookies</h2>
+    <h3>Analytics</h3>
+    <p>Metro Control version 1.0.0 does not include Google Analytics, Firebase Analytics, Mixpanel, Amplitude, Segment, PostHog, or a comparable analytics platform.</p>
     <h3>Advertising</h3>
-    <p>The extension does not contain third-party advertising, an ad network, retargeting code, behavioral advertising technology, or advertising identifiers.</p>
+    <p>The extension does not display third-party advertising and does not include ad-network code, behavioral advertising technology, retargeting pixels, or advertising identifiers.</p>
     <h3>Cookies and fingerprinting</h3>
-    <p>Metro Control does not request Chrome's cookies permission and is not designed to fingerprint the browser or device, correlate a person across websites, or create a cross-site behavioral profile.</p>
+    <p>Metro Control does not request Chrome's cookies permission and is not designed to fingerprint the browser or device, correlate users across websites, or create cross-site behavioral profiles.</p>
     <h3>Crash reporting</h3>
     <p>The reviewed package does not include a third-party crash-reporting SDK that automatically uploads game state, device identifiers, or diagnostic records to the developer.</p>
   </div>
 </section>
 
-<section class="card" id="sharing">
-  <div class="card-head"><div class="section-no">14</div><h2>Sharing, sale, and disclosure</h2></div>
-  <div class="card-body">
-    <p>The developer does not sell, rent, license, or provide the local Metro Control game save to advertisers, data brokers, analytics companies, social networks, or marketing providers because the current version does not collect that save for developer use.</p>
-    <p>There is no online leaderboard, public player profile, multiplayer account, shared network, or automatic social-posting system in version 1.0.0.</p>
-    <p>If a user voluntarily takes a screenshot, records gameplay, copies information, or shares content through another application, that later sharing is controlled by the user and the separate service involved.</p>
-    <p>If the developer receives a lawful request for information, the developer can only provide information actually possessed. The local game state described by this policy is not maintained in a developer gameplay database during normal operation.</p>
+<section class="chapter" id="s9">
+  <div class="chapter-no">09</div>
+  <div class="chapter-body">
+    <h2>Retention, deletion, and removal</h2>
+    <p>The local game save remains in the Chrome browser profile so the network can persist after the popup closes. There is no developer-side retention period for normal gameplay because the current version does not maintain a remote save database.</p>
+    <p>Local data may remain until it is replaced, cleared through browser storage controls, removed with the browser profile, affected by administrator policy, or removed when the extension is uninstalled according to Chrome's data-management behavior.</p>
+    <p>Deleting local Metro Control data removes the state required to reconstruct the network, including routes, trains, stations, passenger queues, incidents, credits, reliability, statistics, and progression.</p>
+    <div class="note warn"><strong>Backups outside Metro Control:</strong> Chrome profile migration, operating-system backups, enterprise-management tools, or other software may independently preserve browser files. Those copies are controlled by those separate systems.</div>
   </div>
 </section>
 
-<section class="card" id="security">
-  <div class="card-head"><div class="section-no">15</div><h2>Security and data minimization</h2></div>
-  <div class="card-body">
-    <p>Metro Control minimizes privacy exposure by avoiding an account system, remote gameplay backend, analytics platform, advertising stack, broad browser permissions, and access to unrelated web pages.</p>
-    <p>The extension's game code and visual assets are packaged locally rather than retrieved as remote executable code during normal use.</p>
-    <p>Local browser storage should not be interpreted as an encrypted vault. A person or process with access to the same unlocked browser profile, operating-system account, browser files, or device backups may potentially access local extension data depending on the security of the device.</p>
-    <p>No software can guarantee absolute security. Users should keep Chrome and their operating system updated and use appropriate device security.</p>
+<section class="chapter" id="s10">
+  <div class="chapter-no">10</div>
+  <div class="chapter-body">
+    <h2>Security and data minimization</h2>
+    <p>Metro Control reduces privacy exposure by avoiding an account system, developer gameplay backend, analytics service, advertising stack, broad Chrome permissions, and access to unrelated websites.</p>
+    <p>The extension's code and visual assets are packaged locally rather than being loaded as remote executable code during normal play.</p>
+    <p>Local browser storage is not the same as encrypted vault storage. A person or process with access to the same unlocked browser profile, operating-system account, browser files, or device backups may potentially access local extension data depending on device security.</p>
+    <p>Users should keep Chrome and their operating system updated and use appropriate device security.</p>
   </div>
 </section>
 
-<section class="card" id="deletion">
-  <div class="card-head"><div class="section-no">16</div><h2>Deleting Metro Control data</h2></div>
-  <div class="card-body">
-    <p>Metro Control version 1.0.0 does not maintain a developer-side account that must be closed to remove the local game save. The primary stored state is the browser-local <code>metroControlStateV1</code> value.</p>
-    <p>Local game data can be removed by clearing the extension's local site/origin data through browser tools, removing the associated browser profile, or uninstalling the extension subject to Chrome's data-management behavior.</p>
-    <p>Deleting local data removes the information needed to reconstruct saved progress, including network layout, routes, trains, passenger queues, incidents, credits, reliability, statistics, and progression. Because the developer does not have a normal cloud copy, deleted progress is generally not recoverable from the developer.</p>
-    <p>If Chrome, the operating system, an administrator, or a backup product has independently preserved browser-profile files, those copies are controlled by that separate system rather than Metro Control.</p>
+<section class="chapter" id="s11">
+  <div class="chapter-no">11</div>
+  <div class="chapter-body">
+    <h2>Chrome, the Chrome Web Store, and third parties</h2>
+    <p>Metro Control runs on the Chrome platform and may be distributed through the Chrome Web Store. Chrome and the store are separate products and may process installation, update, security, account, diagnostic, or store-related information under their own terms and privacy practices.</p>
+    <p>Operating-system backup software, enterprise browser management, antivirus products, device migration tools, and other third-party software may also interact with browser-profile files independently. Metro Control does not control those products.</p>
+
+    <h3>Children's privacy</h3>
+    <p>Metro Control is a general entertainment game. It does not require a name, date of birth, public profile, user-to-user messaging, precise location, or behavioral advertising profile. Its stored objects represent fictional transit operations rather than real-world identity information.</p>
   </div>
 </section>
 
-<section class="card" id="children">
-  <div class="card-head"><div class="section-no">17</div><h2>Children's privacy</h2></div>
-  <div class="card-body">
-    <p>Metro Control is a general entertainment game. It does not require a name, date of birth, public profile, online account, user-to-user messaging, precise location, or behavioral advertising profile.</p>
-    <p>The extension is not designed to solicit personal information from children or adults. Its stored objects represent fictional transit operations rather than real-world identity information.</p>
+<section class="chapter" id="s12">
+  <div class="chapter-no">12</div>
+  <div class="chapter-body">
+    <h2>Changes to this policy</h2>
+    <p>This policy may be revised to improve clarity, reflect a new Metro Control release, address changes in Chrome Web Store requirements, or describe changes in the extension's privacy practices.</p>
+    <p>If a future version introduces a cloud save, account system, multiplayer, analytics, advertising, real transit data, remote AI, external APIs, website access, or new browser permissions, the privacy policy and relevant store disclosures should be updated accordingly.</p>
   </div>
 </section>
-
-<section class="card" id="platform">
-  <div class="card-head"><div class="section-no">18</div><h2>Chrome, the Chrome Web Store, and other third parties</h2></div>
-  <div class="card-body">
-    <p>Metro Control runs on the Chrome platform and may be distributed through the Chrome Web Store. Chrome and the store are separate products operated independently from this extension and may process installation, update, security, account, diagnostic, or store-related information under their own terms and privacy practices.</p>
-    <p>Similarly, operating-system backup tools, enterprise browser management, antivirus products, device synchronization, and other third-party software can interact with browser-profile files independently. Metro Control does not control those products.</p>
-  </div>
-</section>
-
-<section class="card" id="changes">
-  <div class="card-head"><div class="section-no">19</div><h2>Changes to this Privacy Policy</h2></div>
-  <div class="card-body">
-    <p>This policy may be revised to improve clarity, reflect a new Metro Control release, address changes in Chrome Web Store requirements, or describe changes in applicable privacy practices.</p>
-    <p>The effective date and reviewed extension version are shown at the top of this document.</p>
-    <p>A material change in data handling—such as adding a cloud save, account, multiplayer system, analytics, advertising, real transit data, external API, website access, or new browser permission—should be reflected in an updated policy and corresponding store disclosures.</p>
-  </div>
-</section>
-
-<section class="card" id="contact">
-  <div class="card-head"><div class="section-no">20</div><h2>Privacy contact</h2></div>
-  <div class="card-body">
-    <p>For privacy questions concerning Metro Control, use the developer contact information associated with the Chrome Web Store listing from which this extension was obtained.</p>
-    <p>This document intentionally does not reuse contact information from unrelated extension publisher accounts.</p>
-  </div>
-  <div class="contact-box">
-    <div><strong>Developer contact</strong><br><span>Use the contact method shown on the Metro Control Chrome Web Store listing.</span></div>
-    <div class="contact-chip">Metro Control · Privacy</div>
-  </div>
-</section>
-
-<div class="footer">
-  <span>Metro Control · Privacy Policy · Version 1.0.0</span>
-  <span>Effective August 28, 2026</span>
-</div>
 
 </main>
-</div>
-</div>
+
+<section class="contact-panel">
+  <div class="contact-inner">
+    <div>
+      <strong>Privacy contact</strong>
+      <span>Use the developer contact information shown on the Metro Control Chrome Web Store listing.</span>
+    </div>
+    <div class="contact-badge">Metro Control</div>
+  </div>
+</section>
+
+<footer>
+  <span>Metro Control · Privacy Policy</span>
+  <span>Effective August 28, 2026</span>
+</footer>
+
 </body>
 </html>
